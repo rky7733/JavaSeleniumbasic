@@ -1,0 +1,49 @@
+package AgileAutomate;
+
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+
+public class ContactTestCasse {
+
+	public static void main(String[] args) {
+		contactTest();
+	}
+public static void contactTest() {
+	Response responce = RestAssured.given().auth().basic("evaritesh@com", "evaritesh@com").accept(ContentType.JSON).get("https://evaritesh.agilecrm.com/dev/api/contacts/5554539161387008");
+	String StrResponce = responce.getBody().asPrettyString();
+	System.out.println(StrResponce);
+	int statuscode = responce.statusCode();
+	System.out.println(statuscode);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+package polymorphism;
+
+public class RunTimePolymorphismB extends RuntimepolymorphismA  {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		RuntimepolymorphismA	val =new RunTimePolymorphismB();
+		val.start();
+	}
+
+	public void start() {
+		
+		System.out.println("key");
+	}
+	
+}

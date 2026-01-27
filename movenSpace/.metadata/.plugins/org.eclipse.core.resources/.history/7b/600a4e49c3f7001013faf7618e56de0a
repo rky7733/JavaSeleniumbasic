@@ -1,0 +1,16 @@
+package polymorphism;
+
+public class RTPolyB extends RTPolyA {
+
+	public static void main(String[] args) {
+
+		B	val =new B();
+		val.start();
+	}
+
+	public void start() {
+		
+		System.out.println("key");
+	}
+	
+}

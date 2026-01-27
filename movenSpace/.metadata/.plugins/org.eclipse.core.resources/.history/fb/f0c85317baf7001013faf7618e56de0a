@@ -1,0 +1,19 @@
+package oops;
+
+public class CompileTimePolymorphism {
+// In polymorphism methoth name is same but different emplimentation.It is a 2 type.
+	//1. Compile time polymorphism(method Overloading)
+	//2. Run time polymorphism(method overriding)
+	
+	public static void main(String[] args) {
+
+	}
+	//1.Compile time polymorphism(method Overloading)
+public void persons(int a) {
+	System.out.println("Hello");
+}
+public void persons() {
+	System.out.println("namste");
+}
+
+}

@@ -1,0 +1,26 @@
+package polymorphism;
+//In polymorphism method name same but differnt emplimentation.It is a 2 type.
+//1.Compile time polymorphism(method overloading)-no.of parameter different,type of parameter is different,siquence of parameter is different
+//2.Run time polymorphism(method overriding)-parent aur child class me,same method name,same parameter,inheritance required
+public class CompileTimePolymorphism {
+
+	public static void main(String[] args) {
+		CompileTimePolymorphism obj =	new CompileTimePolymorphism();
+	obj.person(0);
+	obj.person(5,2 );
+	obj.person(5.6);
+	}
+public void person(int a) {
+	System.out.println("I have"+" "+a+" "+"Rupis");
+}
+public void person(int a,int b) {
+	int c=a+b;
+	System.out.println("I have"+" "+c+" " +"Rupis");
+
+}
+public void person(double a) {
+	
+	System.out.println("I have"+" "+a+" "+"Rupis");
+
+}
+}

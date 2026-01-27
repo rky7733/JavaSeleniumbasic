@@ -1,0 +1,16 @@
+package polymorphism;
+
+public class RunTimeB extends RuntimeA  {
+
+	public static void main(String[] args) {
+
+		RunTimeB	val =new RunTimeB();
+		val.start();
+	}
+
+	public void start() {
+		
+		System.out.println("key");
+	}
+	
+}

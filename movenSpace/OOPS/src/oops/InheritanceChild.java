@@ -1,0 +1,20 @@
+package oops;
+
+public class InheritanceChild  extends Inheritance{
+	
+	public  static void childmethod() {
+		
+	Inheritance  in =	new InheritanceChild();
+	in.start();
+	in.run();;
+	}
+	
+public static void main(String[] args) {
+	childmethod();
+}
+
+public void start() {
+	
+	System.out.println("starts with button");
+}
+}
